@@ -10,7 +10,8 @@ export const Container = tw.div`
 
 export const ContainerTitle = tw.div` 
 
-m-10
+m-3
+lg:m-10
 align-center
 justify-center
 `

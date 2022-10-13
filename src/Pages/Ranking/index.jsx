@@ -40,7 +40,7 @@ export default function Ranking() {
   return(
 
   <>
-  <Menu/>
+
   <Container>
     <ContainerTitle>
       <Title>Ranking</Title>

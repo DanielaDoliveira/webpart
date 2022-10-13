@@ -10,6 +10,7 @@ import {
   Route,
   
 } from "react-router-dom";
+import { Menu } from './Components/Menu/index.jsx';
 
 
 function App() {
@@ -18,7 +19,9 @@ function App() {
 
   return (
     <div className="App">
+      
        <BrowserRouter>
+       <Menu></Menu>
       <Routes>
         <Route exact path = '/' element={<Home/>}/>
 

@@ -7,7 +7,9 @@ export const Container = tw.div
   flex-row
 
  justify-center
- mx-20
+ lg:mx-20
+
+ mx-3
  my-5
     
   `
@@ -32,7 +34,8 @@ export const Container = tw.div
   export const InfoContainer = tw.div`
      flex-col
      flex-start
-     p-10
+     lg:p-10
+     p-5
      font-text
      w-screen
      leading-7
@@ -54,11 +57,13 @@ export const Container = tw.div
   `
   export const GamerName = tw.p`
   
-   text-2xl
+   lg:text-2xl
+   text-xl
   `
   export const GamerRecord = tw.p`
   
-   text-sm
+   lg:text-sm
+   text-xs
    text-left
   `
 
