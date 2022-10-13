@@ -6,8 +6,8 @@ export const ButtonNav = tw.button`
 
   justify-center
 
-   lg:px-10
-   lg:py-3
+   md:px-10
+   md:py-3
    mx-0
    px-3
    text-gray-300
