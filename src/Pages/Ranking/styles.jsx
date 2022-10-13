@@ -10,7 +10,7 @@ export const Container = tw.div`
 
 export const ContainerTitle = tw.div` 
 
-m-3
+
 lg:m-10
 align-center
 justify-center
@@ -18,7 +18,11 @@ justify-center
 export const Title = tw.h1 `
   uppercase
   font-text
-  text-6xl
+  text-2xl
+  p-3
+  lg:p-0
+  lg:text-6xl
+ 
   text-center
 
 `

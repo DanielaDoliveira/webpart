@@ -8,7 +8,7 @@ export const ButtonNav = tw.button`
 
    lg:px-10
    lg:py-3
-   mx-2
+   mx-0
    px-3
    text-gray-300
    rounded-full

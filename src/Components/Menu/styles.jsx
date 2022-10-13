@@ -32,7 +32,7 @@ justify-center
 text-sm
 flex
 flex-row
-md:text-3xl 
+lg:text-3xl 
 
 font-text
 
