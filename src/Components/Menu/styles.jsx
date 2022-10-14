@@ -4,15 +4,17 @@ import tw from 'tailwind-styled-components';
 export const Navbar = tw.nav`
     flex-col
     justify-center
+    align-center
   text-center
     
-    w-screen
-    md:w-screen
    
+    md:w-screen
+  
     bg-neutral-900
     mt-0
     md:pb-20
     pb-3
+    m-0
   
 `
 
@@ -36,6 +38,17 @@ lg:text-3xl
 
 font-text
 
+  
+
+
+ 
+
+`
+
+export const Container = tw.div`
+
+
+w-screen
   
 
 

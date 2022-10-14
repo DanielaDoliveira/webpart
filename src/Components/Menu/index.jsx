@@ -2,6 +2,7 @@ import React,{useState} from 'react';
 import 
 { Navbar,
   Logo,
+  Container,
   Option,
   OptionsMenu
  } from './styles';
@@ -17,15 +18,31 @@ export const Menu = ()=>{
     navigate('/ranking');
 
   }
+  function handleClickHomePage(){
+  
+    navigate('/');
+
+  }
+  function handleClickProfilePage(){
+  
+    navigate('/profile');
+
+  }
+  function handleClickCreditsPage(){
+  
+    navigate('/credits');
+
+  }
   return(
-    <Navbar>
+
+  <Navbar>
       <Logo>
        <Link to= "/"> Adventure Quest</Link>
       </Logo>
       <OptionsMenu>
 
       <ButtonMenu 
-      clicked = {()=>{}}
+      clicked = {handleClickProfilePage}
       name = "Profile"
      / >
        
@@ -38,14 +55,14 @@ export const Menu = ()=>{
 
     <ButtonMenu 
      
-      clicked = {()=>{}}
+      clicked = {handleClickCreditsPage}
       name = "Credits"
      / >
 
       
           <ButtonMenu 
    
-      clicked = {()=>{}}
+      clicked = {handleClickHomePage}
       name = "Logout"
      / >
       
@@ -53,6 +70,8 @@ export const Menu = ()=>{
       
       </OptionsMenu>
     </Navbar>
+
+  
   );
 
 }
