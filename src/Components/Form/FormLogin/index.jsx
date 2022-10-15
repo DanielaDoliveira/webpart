@@ -2,11 +2,16 @@ import React from 'react'
 import { Span,Div, EmailDiv, EmailInput,DescLabel,DivBtn,BtnContainer,
   CheckDiv,CheckInput,CheckLabel,DivRememberForgot,AForgot, PRegister, ARegister, GeneralDivBtn
  } from './styles'
-
+import {useNavigate} from 'react-router-dom'
 import {LoginButton} from '../../Buttons/LoginButton'
 import {GameController, IdentificationBadge} from 'phosphor-react'
 export const FormLogin = (props)=>{
 
+  const navigate = useNavigate();
+function handleClickHomePage(){
+
+  navigate('/home')
+}
 return(
 <>
 <Span>
@@ -42,6 +47,7 @@ return(
       <LoginButton
       icon = {<GameController size={25} color="#fcfcfc" />}
       name = "Login"
+      clicked = {handleClickHomePage}
       />
 
 <PRegister>
