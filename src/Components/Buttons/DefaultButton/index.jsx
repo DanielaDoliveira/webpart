@@ -3,7 +3,7 @@ import { Btn,Content,cont } from './styles';
 
 export const DefaultButton = (props)=>{
   return(
-    <Btn>
+    <Btn onClick={props.clicked}>
     <Content>{props.icon} </Content> <Content>{props.name}</Content>
    
     </Btn>

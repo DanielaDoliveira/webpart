@@ -7,20 +7,27 @@ export const Navbar = tw.nav`
     align-center
   text-center
     
-   
+ 
     md:w-screen
-  
+    
     bg-neutral-900
     mt-0
-    md:pb-20
+    md:pb-5
     pb-3
     m-0
+
   
 `
+export const Main = tw.div`
+bg-neutral-900
+md:flex
+md:justify-center
 
+`
 export const Logo = tw.p`
 md:text-6xl
 text-amber-200
+
 py-10
 font-title
 

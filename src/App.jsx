@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import { Menu } from './Components/Menu/index.jsx';
 import Credits from './Pages/Credits';
+import StartPage from './Pages/StartPage';
 
 
 function App() {
@@ -18,13 +19,13 @@ function App() {
  
 
   return (
-    <div className="App">
+    <div className="bg-neutral-800 m-0 p-0 w-screen">
       
-       <BrowserRouter>
+       <BrowserRouter >
        <Menu/>
       <Routes>
-        <Route exact path = '/' element={<Home/>}/>
-
+        <Route exact path = '/' element={<StartPage/>}/>
+        <Route  path = '/home' element={<Home/>}/>
 
         <Route path="/ranking" element={<Ranking/>}/>
         <Route path="/profile" element={<Profile/>}/>

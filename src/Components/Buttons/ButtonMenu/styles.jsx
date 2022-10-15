@@ -9,7 +9,7 @@ export const ButtonNav = tw.button`
    md:px-10
    md:py-3
    mx-0
-   px-3
+   p-7
    text-gray-300
    rounded-full
    hover:ring-2

@@ -4,7 +4,9 @@ import {Link} from 'react-router-dom'
 
 export const ButtonMenu = (props)=>{
   return(
-    <ButtonNav onClick={props.clicked}>
+    <ButtonNav
+    className={'bg-[{props.color}]'}
+    onClick={props.clicked}>
     {props.name} 
     
     </ButtonNav>

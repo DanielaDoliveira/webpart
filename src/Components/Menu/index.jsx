@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import 
-{ Navbar,
+{ Main,Navbar,
   Logo,
   Container,
   Option,
@@ -20,6 +20,12 @@ export const Menu = ()=>{
   }
   function handleClickHomePage(){
   
+    navigate('/home');
+
+  }
+
+  function handleClickStartPage(){
+  
     navigate('/');
 
   }
@@ -35,9 +41,10 @@ export const Menu = ()=>{
   }
   return(
 
-  <Navbar>
+<Main>
+<Navbar>
       <Logo>
-       <Link to= "/"> Adventure Quest</Link>
+       <Link to= "/home"> Adventure Quest</Link>
       </Logo>
       <OptionsMenu>
 
@@ -53,16 +60,11 @@ export const Menu = ()=>{
       name = "Ranking"
      / >
 
-    <ButtonMenu 
-     
-      clicked = {handleClickCreditsPage}
-      name = "Credits"
-     / >
-
+ 
       
           <ButtonMenu 
    
-      clicked = {handleClickHomePage}
+      clicked = {handleClickStartPage}
       name = "Logout"
      / >
       
@@ -71,6 +73,7 @@ export const Menu = ()=>{
       </OptionsMenu>
     </Navbar>
 
+</Main>
   
   );
 
