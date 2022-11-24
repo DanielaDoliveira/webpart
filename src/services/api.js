@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 const api = axios.create({
-  baseURL: 'https://projinyi3.herokuapp.com/'
+  baseURL: 'http://advquestapi-env.eba-qfqfkwgf.sa-east-1.elasticbeanstalk.com/'
 })
 
 export default api;

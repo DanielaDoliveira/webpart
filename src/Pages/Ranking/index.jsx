@@ -23,7 +23,7 @@ export default function Ranking() {
   const [result,setResult] = useState(null)
   useEffect(()=>{
     async function loadApi(){
-      const response = await api.get(`/ranking?limit=10`).then(response=>{
+      const response = await api.get(`ranking`).then(response=>{
           console.log("RESPONSE ===>",response.data);
           setResult(response);
       }).catch(error=>{
