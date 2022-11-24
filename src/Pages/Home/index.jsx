@@ -23,7 +23,7 @@ export default function Home()
   return(
     <>
   
- <p> 1 2 3 Testando...</p>
+ 
       <ContainerGame>
       <FeedbackBtn image ={ <ChatDots size={50} color="#97aa09" />}/>
         <Unity
